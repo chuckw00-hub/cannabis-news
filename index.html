@@ -10,7 +10,9 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     background: #f4f6f8;
     color: #1a1a2e;
-    line-height: 1.6;
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-text-size-adjust: 100%;
   }
 
   /* HEADER */
@@ -21,7 +23,7 @@
     text-align: center;
   }
   .header .eyebrow {
-    font-size: 11px;
+    font-size: 13px;
     font-weight: 700;
     letter-spacing: 2.5px;
     text-transform: uppercase;
@@ -29,12 +31,12 @@
     margin-bottom: 10px;
   }
   .header h1 {
-    font-size: 28px;
+    font-size: 34px;
     font-weight: 800;
     margin-bottom: 8px;
   }
   .header .subtitle {
-    font-size: 14px;
+    font-size: 16px;
     opacity: 0.75;
   }
   .header .date-range {
@@ -43,10 +45,10 @@
     background: rgba(190,155,87,0.2);
     border: 1px solid #BE9B57;
     color: #BE9B57;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
     letter-spacing: 1px;
-    padding: 6px 18px;
+    padding: 8px 20px;
     border-radius: 20px;
   }
 
@@ -63,14 +65,14 @@
   .summary-bar .pill {
     background: rgba(6,40,60,0.85);
     color: white;
-    font-size: 12px;
+    font-size: 14.5px;
     font-weight: 600;
-    padding: 5px 14px;
+    padding: 7px 16px;
     border-radius: 20px;
   }
 
   /* LAYOUT */
-  .container { max-width: 860px; margin: 0 auto; padding: 28px 16px 60px; }
+  .container { max-width: 900px; margin: 0 auto; padding: 30px 18px 64px; }
 
   /* SECTION HEADERS */
   .section-label {
@@ -79,9 +81,9 @@
     gap: 12px;
     margin: 36px 0 14px;
   }
-  .section-label .icon { font-size: 22px; }
+  .section-label .icon { font-size: 26px; }
   .section-label h2 {
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 800;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -98,8 +100,8 @@
   .card {
     background: white;
     border-radius: 10px;
-    padding: 18px 20px;
-    margin-bottom: 12px;
+    padding: 20px 24px;
+    margin-bottom: 14px;
     border-left: 4px solid #06283C;
     box-shadow: 0 2px 8px rgba(0,0,0,0.06);
     position: relative;
@@ -118,16 +120,16 @@
     flex-wrap: wrap;
   }
   .card-date {
-    font-size: 11px;
+    font-size: 13px;
     font-weight: 700;
     color: #888;
     text-transform: uppercase;
     letter-spacing: 0.8px;
   }
   .badge {
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 700;
-    padding: 2px 8px;
+    padding: 3px 10px;
     border-radius: 10px;
     letter-spacing: 0.5px;
     text-transform: uppercase;
@@ -140,15 +142,16 @@
   .badge-gold   { background: #fef9e7; color: #9a7d0a; }
 
   .card h3 {
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 700;
     color: #06283C;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
+    line-height: 1.35;
   }
   .card p {
-    font-size: 13.5px;
-    color: #444;
-    line-height: 1.6;
+    font-size: 17px;
+    color: #333;
+    line-height: 1.65;
   }
   .card .vhe-impact {
     margin-top: 10px;
@@ -170,7 +173,7 @@
     margin: 28px 0;
   }
   .status-box h3 {
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 800;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -187,11 +190,11 @@
     flex-wrap: wrap;
   }
   .status-row:last-child { border-bottom: none; }
-  .status-row .label { font-size: 13px; opacity: 0.85; flex: 1; min-width: 200px; }
+  .status-row .label { font-size: 16px; opacity: 0.9; flex: 1; min-width: 220px; }
   .status-row .val {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 700;
-    padding: 3px 10px;
+    padding: 4px 12px;
     border-radius: 10px;
     white-space: nowrap;
   }
@@ -204,17 +207,21 @@
   /* FOOTER */
   .footer {
     text-align: center;
-    font-size: 11px;
-    color: #999;
+    font-size: 13.5px;
+    color: #888;
+    line-height: 1.6;
     padding-top: 24px;
     border-top: 1px solid #e0e0e0;
     margin-top: 40px;
   }
 
   @media (max-width: 600px) {
-    .header h1 { font-size: 22px; }
+    .header h1 { font-size: 26px; }
     .summary-bar { flex-direction: column; }
-    .card { padding: 14px 16px; }
+    .card { padding: 16px 18px; }
+    .card h3 { font-size: 18.5px; }
+    .card p { font-size: 16.5px; }
+    .status-row .val { white-space: normal; }
   }
 </style>
 </head>
