@@ -22,79 +22,47 @@
     text-align: center;
   }
   .header .eyebrow {
-    font-size:17px;
-    font-weight: 700;
-    letter-spacing: 2.5px;
-    text-transform: uppercase;
-    color: #BE9B57;
-    margin-bottom: 10px;
+    font-size: 13px; font-weight: 700; letter-spacing: 2.5px;
+    text-transform: uppercase; color: #BE9B57; margin-bottom: 10px;
   }
   .header h1 { font-size: 34px; font-weight: 800; margin-bottom: 8px; }
-  .header .subtitle { font-size: 16px; opacity: 0.8; }
+  .header .subtitle { font-size: 16px; opacity: 0.75; }
   .header .date-range {
-    display: inline-block;
-    margin-top: 16px;
-    background: rgba(190,155,87,0.2);
-    border: 1px solid #BE9B57;
-    color: #BE9B57;
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    padding: 6px 18px;
-    border-radius: 20px;
+    display: inline-block; margin-top: 16px;
+    background: rgba(190,155,87,0.2); border: 1px solid #BE9B57;
+    color: #BE9B57; font-size: 14px; font-weight: 600;
+    letter-spacing: 1px; padding: 6px 18px; border-radius: 20px;
   }
 
   .summary-bar {
-    background: #BE9B57;
-    padding: 14px 24px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
+    background: #BE9B57; padding: 14px 24px;
+    display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;
   }
   .summary-bar .pill {
-    background: rgba(6,40,60,0.85);
-    color: white;
-    font-size: 12px;
-    font-weight: 600;
-    padding: 5px 14px;
-    border-radius: 20px;
+    background: rgba(6,40,60,0.85); color: white;
+    font-size: 14.5px; font-weight: 600; padding: 5px 14px; border-radius: 20px;
   }
 
-  .container { max-width: 900px; margin: 0 auto; padding: 30px 18px 64px; }
+  .container { max-width: 900px; margin: 0 auto; padding: 28px 16px 60px; }
 
   .status-box {
-    background: #06283C;
-    color: white;
-    border-radius: 10px;
-    padding: 20px 24px;
-    margin: 28px 0;
+    background: #06283C; color: white;
+    border-radius: 10px; padding: 20px 24px; margin: 28px 0;
   }
   .status-box h3 {
-    font-size:17px;
-    font-weight: 800;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #BE9B57;
-    margin-bottom: 14px;
+    font-size: 16px; font-weight: 800; letter-spacing: 2px;
+    text-transform: uppercase; color: #BE9B57; margin-bottom: 14px;
   }
   .status-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 9px 0;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-    gap: 12px;
-    flex-wrap: wrap;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 9px 0; border-bottom: 1px solid rgba(255,255,255,0.1);
+    gap: 12px; flex-wrap: wrap;
   }
   .status-row:last-child { border-bottom: none; }
-  .status-row .label { font-size: 17px; opacity: 0.9; flex: 1; min-width: 200px; }
+  .status-row .label { font-size: 17px; opacity: 0.85; flex: 1; min-width: 180px; }
   .val {
-    font-size: 11px;
-    font-weight: 700;
-    padding: 3px 10px;
-    border-radius: 10px;
-    white-space: nowrap;
+    font-size: 14px; font-weight: 700; padding: 3px 10px;
+    border-radius: 10px; white-space: nowrap;
   }
   .val-red    { background: #c0392b; color: white; }
   .val-orange { background: #e67e22; color: white; }
@@ -103,32 +71,22 @@
   .val-gold   { background: #BE9B57; color: #06283C; }
 
   .section-label {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin: 36px 0 14px;
+    display: flex; align-items: center; gap: 12px; margin: 36px 0 14px;
   }
   .section-label .icon { font-size: 26px; }
   .section-label h2 {
-    font-size:17px;
-    font-weight: 800;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #06283C;
+    font-size: 16px; font-weight: 800; letter-spacing: 2px;
+    text-transform: uppercase; color: #06283C;
   }
   .section-label::after {
-    content: '';
-    flex: 1;
-    height: 2px;
+    content: ''; flex: 1; height: 2px;
     background: linear-gradient(to right, #BE9B57, transparent);
   }
 
+  /* CARD */
   .card {
-    background: white;
-    border-radius: 10px;
-    padding: 20px 22px;
-    margin-bottom: 14px;
-    border-left: 4px solid #06283C;
+    background: white; border-radius: 10px; padding: 20px 22px;
+    margin-bottom: 14px; border-left: 4px solid #06283C;
     box-shadow: 0 2px 8px rgba(0,0,0,0.06);
   }
   .card.urgent  { border-left-color: #c0392b; }
@@ -138,26 +96,16 @@
   .card.neutral { border-left-color: #95a5a6; }
 
   .card-meta {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 8px;
-    flex-wrap: wrap;
+    display: flex; align-items: center; gap: 8px;
+    margin-bottom: 8px; flex-wrap: wrap;
   }
   .card-date {
-    font-size:17px;
-    font-weight: 700;
-    color: #888;
-    text-transform: uppercase;
-    letter-spacing: 0.8px;
+    font-size: 13px; font-weight: 700; color: #888;
+    text-transform: uppercase; letter-spacing: 0.8px;
   }
   .badge {
-    font-size: 12px;
-    font-weight: 700;
-    padding: 3px 10px;
-    border-radius: 10px;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
+    font-size: 12px; font-weight: 700; padding: 2px 9px;
+    border-radius: 10px; letter-spacing: 0.5px; text-transform: uppercase;
   }
   .badge-red    { background: #fde8e8; color: #c0392b; }
   .badge-orange { background: #fef3e2; color: #e67e22; }
@@ -166,78 +114,108 @@
   .badge-gray   { background: #f0f0f0; color: #666; }
   .badge-gold   { background: #fef9e7; color: #9a7d0a; }
 
-  .card h3 {
-    font-size: 22px;
+  .card h3 { font-size: 22px; font-weight: 700; color: #06283C; margin-bottom: 8px; line-height: 1.35; }
+  .card .summary { font-size: 19px; color: #333; line-height: 1.65; }
+
+  /* (impact box) */
+  .vhe-impact {
+    margin-top: 12px; padding: 10px 14px;
+    background: #f8f4ec; border-radius: 6px;
+    font-size: 12.5px; color: #5d4e37; border-left: 3px solid #BE9B57;
+  }
+  .vhe-impact strong { color: #06283C; }
+
+  /* READ MORE TOGGLE */
+  details { margin-top: 14px; }
+  details summary {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
     font-weight: 700;
-    color: #06283C;
-    margin-bottom: 8px;
-    line-height: 1.35;
+    color: white;
+    background: #06283C;
+    padding: 8px 18px;
+    border-radius: 20px;
+    list-style: none;
+    user-select: none;
+    outline: none;
+    border: none;
+    transition: background 0.2s;
   }
-  .card p { font-size: 19px; color: #333; line-height: 1.65; }
+  details summary::-webkit-details-marker { display: none; }
+  details summary::after {
+    content: '▼';
+    font-size: 9px;
+    transition: transform 0.2s;
+    display: inline-block;
+  }
+  details[open] summary { background: #BE9B57; color: #06283C; }
+  details[open] summary::after { transform: rotate(180deg); }
+  details summary:hover { background: #0a3d5c; }
 
-  .card .vhe-impact {
+  .detail-body {
     margin-top: 12px;
-    padding: 10px 14px;
-    background: #f8f4ec;
-    border-radius: 6px;
-    font-size: 12.5px;
-    color: #5d4e37;
-    border-left: 3px solid #BE9B57;
+    padding: 14px 16px;
+    background: #f7f9fb;
+    border-radius: 8px;
+    border: 1px solid #e4eaf0;
+    font-size: 18px;
+    color: #3a3a3a;
+    line-height: 1.7;
   }
-  .card .vhe-impact strong { color: #06283C; }
+  .detail-body p { margin-bottom: 10px; }
+  .detail-body p:last-child { margin-bottom: 0; }
+  .detail-body ul { padding-left: 18px; margin-bottom: 10px; }
+  .detail-body li { margin-bottom: 6px; }
+  .detail-body strong { color: #06283C; }
+  .detail-body .source-tag {
+    display: inline-block; margin-top: 10px;
+    font-size: 14px; font-style: italic; color: #888;
+  }
+  .detail-body h4 {
+    font-size: 15px; font-weight: 800; letter-spacing: 1px;
+    text-transform: uppercase; color: #06283C;
+    margin: 12px 0 6px;
+  }
 
-  .confidence-note {
-    margin-top: 10px;
-    font-size: 15px;
-    color: #888;
-    font-style: italic;
+  /* STAT GRID */
+  .stat-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 14px;
   }
+  @media (max-width: 600px) { .stat-grid { grid-template-columns: 1fr 1fr; } }
+  .stat-card {
+    background: #f0f5f8; border-radius: 8px; padding: 12px 14px; text-align: center;
+  }
+  .stat-card .stat-val { font-size: 26px; font-weight: 800; color: #06283C; }
+  .stat-card .stat-label { font-size: 13.5px; color: #666; margin-top: 2px; }
 
-  .two-col {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 14px;
-  }
+  /* TWO-COL */
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
   @media (max-width: 640px) {
     .two-col { grid-template-columns: 1fr; }
     .header h1 { font-size: 26px; }
     .card h3 { font-size: 20px; }
-    .card p { font-size: 18px; }
-    .status-row .val { white-space: normal; }
+    .card .summary { font-size: 18px; }
+    .detail-body { font-size: 17px; }
+    .val { white-space: normal; }
   }
 
-  .stat-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    margin-top: 14px;
+  .top-nav {
+    max-width: 900px; margin: 0 auto; padding: 14px 18px 0;
+    display: flex; justify-content: flex-end;
   }
-  @media (max-width: 600px) { .stat-grid { grid-template-columns: 1fr 1fr; } }
-  .stat-card {
-    background: #f0f5f8;
-    border-radius: 8px;
-    padding: 12px 14px;
-    text-align: center;
+  .top-nav a {
+    font-size: 15px; font-weight: 700; color: #06283C;
+    background: #fff; border: 1px solid #d8e0e8; border-radius: 20px;
+    padding: 7px 16px; text-decoration: none; transition: all 0.15s;
   }
-  .stat-card .stat-val {
-    font-size: 26px;
-    font-weight: 800;
-    color: #06283C;
-  }
-  .stat-card .stat-label {
-    font-size: 13.5px;
-    color: #666;
-    margin-top: 2px;
-  }
+  .top-nav a:hover { background: #06283C; color: #fff; border-color: #06283C; }
 
   .footer {
-    text-align: center;
-    font-size: 13.5px;
-    color: #888;
-    line-height: 1.6;
-    padding-top: 24px;
-    border-top: 1px solid #e0e0e0;
-    margin-top: 40px;
+    text-align: center; font-size: 13.5px; color: #888; line-height: 1.6;
+    padding-top: 24px; border-top: 1px solid #e0e0e0; margin-top: 40px;
   }
 </style>
 </head>
@@ -258,6 +236,8 @@
   <div class="pill">🍁 VT CCB: Ad guidance comment deadline Aug 28</div>
   <div class="pill">🍁 VT: Updated Product Registration Guidance now live</div>
 </div>
+
+<div class="top-nav"><a href="aug12-2026.html">📚 Archive — Aug 2–12 roundup →</a></div>
 
 <div class="container">
 
@@ -286,7 +266,7 @@
     </div>
   </div>
 
-  <!-- SECTION: M&A -->
+  <!-- M&A -->
   <div class="section-label">
     <span class="icon">🤝</span>
     <h2>M&amp;A — Curaleaf / Aurora</h2>
@@ -299,40 +279,35 @@
       <span class="badge badge-gold">Medium-High Confidence</span>
     </div>
     <h3>Curaleaf CEO Sets Aug 18 Ultimatum for Aurora — Goes Hostile If Ignored</h3>
-    <p>In a direct on-record interview with TDR, Curaleaf Chairman &amp; CEO Boris Jordan confirmed deal terms and issued a deadline: if Aurora's board doesn't engage by ~August 18, Curaleaf will bypass the board and go directly to Aurora shareholders with a formal hostile tender offer.</p>
+    <p class="summary">Curaleaf Chairman &amp; CEO Boris Jordan gave an on-record interview confirming deal terms and setting an ultimatum: engage by ~Aug 18 or Curaleaf goes directly to Aurora shareholders with a hostile tender offer. Strategic goal: Aurora's 50+ ton/yr EU-GMP cultivation capacity for international market access.</p>
 
     <div class="stat-grid">
-      <div class="stat-card">
-        <div class="stat-val">$4.00</div>
-        <div class="stat-label">Offer price/share (US$)</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-val">$5.00</div>
-        <div class="stat-label">Consideration cap (US$)</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-val">45%</div>
-        <div class="stat-label">Premium to 30-day VWAP</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-val">$1.5B</div>
-        <div class="stat-label">Combined LTM revenue (mgmt est.)</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-val">$350M</div>
-        <div class="stat-label">Combined LTM adj. EBITDA (mgmt est.)</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-val">$40M</div>
-        <div class="stat-label">Projected annual synergies</div>
-      </div>
+      <div class="stat-card"><div class="stat-val">$4.00</div><div class="stat-label">Offer price/share (US$)</div></div>
+      <div class="stat-card"><div class="stat-val">$5.00</div><div class="stat-label">Consideration cap (US$)</div></div>
+      <div class="stat-card"><div class="stat-val">45%</div><div class="stat-label">Premium to 30-day VWAP</div></div>
+      <div class="stat-card"><div class="stat-val">$1.5B</div><div class="stat-label">Combined LTM revenue</div></div>
+      <div class="stat-card"><div class="stat-val">$350M</div><div class="stat-label">Combined adj. EBITDA</div></div>
+      <div class="stat-card"><div class="stat-val">$40M</div><div class="stat-label">Annual synergies (est.)</div></div>
     </div>
 
-    <p style="margin-top:14px;">Strategic rationale: Aurora holds 50+ ton/yr EU-GMP cultivation capacity — Curaleaf's ticket into international/European medical cannabis markets. Aurora board previously declined twice without engaging.</p>
-    <div class="confidence-note">⚠️ CEO source (on-record interview) — formal SEDAR+/regulatory filing still unconfirmed as of this briefing. Aurora response: "reviewing without confirming offer exists."</div>
+    <details>
+      <summary>Read more</summary>
+      <div class="detail-body">
+        <h4>Deal Structure</h4>
+        <p>Offer: 0.3463 Curaleaf shares + US$0.75 cash per Aurora share = US$4.00/share. Consideration capped at US$5.00/share (Jordan confirmed). Aurora board has declined twice previously without engaging. Jordan has set ~Aug 18 as the deadline before launching a formal hostile shareholder tender — bypassing the board entirely.</p>
+        <h4>Strategic Rationale</h4>
+        <p>Aurora Cannabis holds 50+ ton/year EU-GMP certified cultivation capacity across Canada and Europe. This is Curaleaf's primary entry point into the European and international medical cannabis markets, which are growing rapidly as Germany and other EU countries legalize. The deal would create the first truly global cannabis operator by revenue.</p>
+        <h4>Aurora's Situation</h4>
+        <p>Aurora has ~$7M/quarter cash burn and high SG&A relative to peers. The 110% premium to net cash (stripping Aurora's balance sheet) implies the market values Aurora's operations near zero — making the bid compelling to shareholders even if the board resists.</p>
+        <h4>Confidence Note</h4>
+        <p>Source is a direct CEO on-record interview (TDR, Aug 12, 2026). No formal SEDAR+/regulatory filing confirmed as of this briefing. Aurora's public response: "reviewing without confirming offer exists." Treat as medium-high confidence until formal filing.</p>
+        <div class="source-tag">Source: TDR direct CEO interview (Boris Jordan), Aug 12, 2026 · TDR article: thedalesreport.com/cannabis/breaking-cannabis-ma-curaleafs-bid-for-aurora-cannabis-goes-public/</div>
+      </div>
+    </details>
+
   </div>
 
-  <!-- SECTION: INDUSTRY DATA -->
+  <!-- INDUSTRY DATA -->
   <div class="section-label">
     <span class="icon">📈</span>
     <h2>Industry Data — Ohio &amp; Earnings</h2>
@@ -341,10 +316,22 @@
   <div class="card positive">
     <div class="card-meta">
       <span class="card-date">Aug 13</span>
-      <span class="badge badge-green">Verified — TDR Primary Source</span>
+      <span class="badge badge-green">Verified — TDR/Primary</span>
     </div>
-    <h3>Ohio Licensed Cannabis: $107M April Record + 26% YoY Growth After Hemp Ban</h3>
-    <p>Ohio adult-use market (2-year anniversary) confirmed via primary TDR article: $107M in April 2026 (all-time monthly record), +26% YoY. After Ohio's hemp enforcement action, licensed dispensaries saw +9% per day — documented proof that state hemp crackdowns drive consumers to licensed stores. Multiple MSO CEOs cited Ohio as the template for what happens nationally after Nov 12.</p>
+    <h3>Ohio Licensed Cannabis: $107M April Record + 26% YoY After Hemp Ban</h3>
+    <p class="summary">Ohio adult-use market hit $107M in April 2026 (all-time record), +26% YoY. After Ohio's hemp enforcement action, licensed dispensaries saw +9% sales per day — documented proof that hemp bans drive consumers to licensed stores. Multiple MSO CEOs cite Ohio as the Nov 12 template.</p>
+
+    <details>
+      <summary>Read more</summary>
+      <div class="detail-body">
+        <h4>The Ohio Data</h4>
+        <p>Ohio's adult-use market launched in 2024. At its 2-year mark (Aug 2026): $107M in April 2026 sales, all-time monthly record; +26% year-over-year growth. After Ohio enforcement action against hemp-derived THC products, licensed dispensaries immediately saw +9% per day in sales — the direct consumer shift effect is now quantified.</p>
+        <h4>Why This Matters for Nov 12</h4>
+        <p>Ohio is being cited industry-wide as the template for what happens when a state eliminates the hemp THC market. Multiple MSO CEOs (TerrAscend, Jushi, Curaleaf) referenced Ohio data in Q2 2026 earnings calls to explain why they expect licensed-market growth to accelerate nationally after Nov 12. If the federal pattern mirrors Ohio: consumers don't disappear — they shift to licensed stores.</p>
+        <div class="source-tag">Source: TDR primary article — "Curaleaf Earnings, and Ohio's $107M April Sales Record" (thedalesreport.com, Aug 2026)</div>
+      </div>
+    </details>
+
   </div>
 
   <div class="card positive">
@@ -352,29 +339,48 @@
       <span class="card-date">Aug 13</span>
       <span class="badge badge-green">Earnings Recap</span>
     </div>
-    <h3>Q2 2026 MSO Earnings Summary — Sector Growing</h3>
-    <p>Confirmed Q2 figures from primary IR sources:</p>
+    <h3>Q2 2026 MSO Earnings — Sector Growing, 280E Relief Being Booked</h3>
+    <p class="summary">All four major MSOs reported growth in Q2 2026. Multiple operators are booking 280E tax relief under an accrual theory pending the DEA final rescheduling rule — a signal that the financial benefit of rescheduling is real and already moving numbers.</p>
+
     <div class="two-col" style="margin-top:12px;">
       <div style="background:#f8f9fa;border-radius:8px;padding:12px;">
         <strong style="color:#06283C;">Curaleaf</strong><br>
-        <span style="font-size:16px;">$340.1M revenue · +10% YoY</span>
+        <span style="font-size:13px;">$340.1M revenue · +10% YoY</span>
       </div>
       <div style="background:#f8f9fa;border-radius:8px;padding:12px;">
         <strong style="color:#06283C;">TerrAscend</strong><br>
-        <span style="font-size:16px;">$67.1M revenue · 54% gross margin</span>
+        <span style="font-size:13px;">$67.1M revenue · 54% gross margin</span>
       </div>
       <div style="background:#f8f9fa;border-radius:8px;padding:12px;">
         <strong style="color:#06283C;">Jushi Holdings</strong><br>
-        <span style="font-size:16px;">$71.3M · $9.4M wholesale (record)</span>
+        <span style="font-size:13px;">$71.3M · $9.4M wholesale (record)</span>
       </div>
       <div style="background:#f8f9fa;border-radius:8px;padding:12px;">
         <strong style="color:#06283C;">Verano</strong><br>
-        <span style="font-size:16px;">$218M · 3rd straight growth qtr</span>
+        <span style="font-size:13px;">$218M · 3rd straight growth qtr</span>
       </div>
     </div>
+
+    <details>
+      <summary>Read more</summary>
+      <div class="detail-body">
+        <h4>Cresco Labs — $26.7M 280E Tax Benefit (Aug 7)</h4>
+        <p>Cresco Labs booked a $26.7M 280E tax benefit in Q2 2026 ($73M revenue, $40M adj. EBITDA). This is real-world confirmation that licensed operators are booking tax relief under a tax-accrual theory — anticipating the DEA final rescheduling rule, which is not yet in effect. The DEA ALJ recommendation is due Sept–Oct 2026. Cresco's figures are from TDR/RSS, not independently verified from primary press release (Cresco files on SEDAR+, not SEC).</p>
+        <h4>TerrAscend Detail</h4>
+        <p>$67.1M net revenue (vs $65.5M Q1 2026, $65.0M Q2 2025 — sequential and YoY growth). 54.0% gross margin (up 290 bps YoY). Net income from continuing operations: $10.1M. 16th consecutive quarter of positive operating cash flow. $42M cash. CEO explicitly noted Ohio hemp enforcement driving regulated-market growth and expects national repeat after Nov 12. Source: ir.terrascend.com press release, Aug 6, 2026.</p>
+        <h4>Jushi Holdings Detail</h4>
+        <p>$71.3M revenue (+10% YoY). Wholesale revenue: $9.4M (+68% — all-time record). CEO noted Ohio hemp ban enforcement as a direct driver. Source: TDR written article (thedalesreport.com, Jul 30, 2026).</p>
+        <h4>Verano Detail</h4>
+        <p>$218M revenue (+8% — third straight quarter of growth). $100M gross profit. $51M adj. EBITDA. Some margin compression from price competition. Source: TDR written article (thedalesreport.com, Aug 6, 2026).</p>
+        <h4>280E Warning</h4>
+        <p>The 280E final rule is NOT yet in effect. DEA ALJ Mulrooney's recommendation is expected Sept–Oct 2026; then a final rule must be issued. Acting AG Blanche's April 23 interim order moved state-licensed medical MJ to Schedule III, but broader rescheduling and formal 280E relief for all operators is still pending. Do NOT book 280E tax benefits without CPA/attorney guidance.</p>
+        <div class="source-tag">Sources: ir.terrascend.com (primary), thedalesreport.com, TDR RSS (Cresco — unverified from primary)</div>
+      </div>
+    </details>
+
   </div>
 
-  <!-- SECTION: LEGISLATION -->
+  <!-- LEGISLATION -->
   <div class="section-label">
     <span class="icon">📋</span>
     <h2>Legislation — What's Real vs. What Isn't</h2>
@@ -384,29 +390,35 @@
     <div class="card-meta">
       <span class="card-date">Aug 13</span>
       <span class="badge badge-gray">NOT Real Legislation</span>
-      <span class="badge badge-blue">Verified — GovTrack + PDF Metadata</span>
+      <span class="badge badge-blue">Verified — GovTrack + PDF</span>
     </div>
-    <h3>"Full-Spectrum CBD and Hemp Clarification Act of 2026" — It's a Lawyer's Draft, Not a Bill</h3>
-    <p>CLN (Cannabis Legalization News) published a video titled "The CBD Bill Nobody Is Talking About" covering this proposal. <strong>It is not a bill before Congress.</strong> Verified via GovTrack (0 results), GovInfo, and the PDF itself — metadata confirms: Author = Thomas E. Howard (cannabis attorney / CLN host), Subject = <em>"Prepared for legislative consideration; not introduced legislation,"</em> Creator = <em>"Cannabis Industry Lawyer outreach package."</em></p>
-    <p style="margin-top:10px;">What the draft proposes: amend the Agricultural Marketing Act of 1946 to protect full-spectrum CBD, while <strong>explicitly excluding intoxicating and synthetic hemp-derived products</strong>. If something like this ever became law, intoxicating hemp-derived THC products would fall in the "intoxicating" exclusion — the draft offers them no protection.</p>
+    <h3>"Full-Spectrum CBD and Hemp Clarification Act of 2026" — Lawyer's Draft, Not a Bill</h3>
+    <p class="summary">CLN published a video called "The CBD Bill Nobody Is Talking About." It is not a bill before Congress — it's an advocacy draft written by cannabis attorney Thomas E. Howard (the CLN host himself). No bill number, no sponsor, no committee referral. Verified via GovTrack (0 results) and PDF metadata.</p>
+
+    <details>
+      <summary>Read more</summary>
+      <div class="detail-body">
+        <h4>What Was Verified</h4>
+        <p>GovTrack API query for the 119th Congress: 0 results for "Full-Spectrum CBD and Hemp Clarification." The PDF hosted on cannabisindustrylawyer.com contains decisive metadata: Author = Thomas E. Howard; Subject = "Prepared for legislative consideration; not introduced legislation"; Creator = "Cannabis Industry Lawyer outreach package." The bill-format caption ("119th CONGRESS / 2d Session / A BILL") is drafting style, not evidence of introduction.</p>
+        <h4>What the Draft Would Do</h4>
+        <p>Amends the Agricultural Marketing Act of 1946 to protect full-spectrum CBD products — while explicitly excluding "intoxicating and synthetic hemp-derived products." The exact definition of "intoxicating" is not provided in the available text, which is the critical issue. If this language were ever enacted, intoxicating hemp-derived THC products would fall in the exclusion — the draft offers them no protection.</p>
+        <h4>Real Introduced Bills (for comparison)</h4>
+        <ul>
+          <li><strong>H.R. 9830</strong> — Lawful Hemp Protection Act (introduced Jul 22, 2026 — 0 cosponsors, no committee action)</li>
+          <li><strong>H.R. 9913</strong> — Safe Sips Act of 2026 (hemp beverages only — inert)</li>
+          <li><strong>Beverage Regulatory Parity Act</strong> — Van Duyne/Landsman (beverages only, 5mg/serving — introduced Aug 10)</li>
+          <li><strong>H.R. 7212</strong> — HEMP Act (introduced, no floor action)</li>
+        </ul>
+        <p>None of these are on a path to passing before Nov 12. Congressional rescue remains off the table.</p>
+        <h4>Directional Signal</h4>
+        <p>Even as an unintroduced draft, this proposal reflects where some in Congress are thinking: protect therapeutic CBD, carve out intoxicating products. That's consistent with Dr. Oz's Medicare CBD position and the synthetic cannabinoid permanent carve-out in P.L. 119-37. The policy trajectory is not favorable to intoxicating hemp-derived THC products long-term.</p>
+        <div class="source-tag">Source: GovTrack API, PDF metadata (cannabisindustrylawyer.com), CLN YouTube RSS description</div>
+      </div>
+    </details>
+
   </div>
 
-  <div class="card info">
-    <div class="card-meta">
-      <span class="card-date">Aug 13</span>
-      <span class="badge badge-blue">Legislative Watch</span>
-    </div>
-    <h3>Real Introduced Hemp Bills for Reference</h3>
-    <p>For context, these hemp-related bills ARE actually before the 119th Congress (all introduced, all low probability of passage before Nov 12):</p>
-    <ul style="margin-top:10px;padding-left:18px;font-size:17px;color:#444;line-height:2;">
-      <li><strong>H.R. 9830</strong> — Lawful Hemp Protection Act (introduced Jul 22, 2026 — 0 cosponsors, no committee action)</li>
-      <li><strong>H.R. 9913</strong> — Safe Sips Act of 2026 (hemp beverages, LaLota — inert)</li>
-      <li><strong>Beverage Regulatory Parity Act</strong> — Van Duyne/Landsman (beverages only, 5mg/serving, alcohol-industry backed — introduced Aug 10)</li>
-      <li><strong>H.R. 7212</strong> — HEMP Act (introduced, no floor action)</li>
-    </ul>
-  </div>
-
-  <!-- SECTION: VERMONT CCB -->
+  <!-- VERMONT CCB -->
   <div class="section-label">
     <span class="icon">🍁</span>
     <h2>Vermont — CCB &amp; Local Updates</h2>
@@ -415,27 +427,64 @@
   <div class="card urgent">
     <div class="card-meta">
       <span class="card-date">Jul 29 CCB Board</span>
-      <span class="badge badge-red">⚠️ Registration Update</span>
+      <span class="badge badge-red">⚠️ Action Required</span>
       <span class="badge badge-blue">Official — ccb.vermont.gov</span>
     </div>
     <h3>CCB Adopts Updated Product Registration Guidance — Review Now</h3>
-    <p>The Vermont CCB Board adopted updated Product Registration Guidance at the July 29, 2026 Board meeting. Updates include clarifications to extraction terminology, font expectations on product labels, and other technical revisions. <strong>The updated guidance is live now</strong> at ccb.vermont.gov/guidance.</p>
+    <p class="summary">The CCB Board adopted updated Product Registration Guidance at the July 29, 2026 meeting. Updates include clarifications to extraction terminology, font expectations on product labels, and other technical revisions. <strong>Guidance is live now</strong> at ccb.vermont.gov/guidance.</p>
+
+    <details>
+      <summary>Read more</summary>
+      <div class="detail-body">
+        <h4>What Changed</h4>
+        <p>The Board approved additional updates to the Product Registration Guidance following a 30-day comment period. The three documented change areas:</p>
+        <ul>
+          <li><strong>Extraction terminology clarifications</strong> — how extraction methods are described on product registrations</li>
+          <li><strong>Font expectations</strong> — minimum font size/style requirements on product labels</li>
+          <li><strong>Other technical revisions</strong> — exact scope not yet reviewed (pull the PDF to see full list)</li>
+        </ul>
+        <div class="source-tag">Source: CCB July Board Meeting Recap — ccb.vermont.gov/july-board-meeting-recap (posted Jul 31, 2026)</div>
+      </div>
+    </details>
+
   </div>
 
   <div class="card warning">
     <div class="card-meta">
-      <span class="card-date">Jul 29 CCB Board — Comment by Aug 28</span>
-      <span class="badge badge-orange">⏰ Comment Deadline Aug 28</span>
+      <span class="card-date">Jul 29 CCB Board</span>
+      <span class="badge badge-orange">⏰ Comment Deadline ~Aug 28</span>
       <span class="badge badge-blue">Official — ccb.vermont.gov</span>
     </div>
     <h3>CCB Draft Advertising Guidance — 4 Material Changes, Comment Window Open</h3>
-    <p>The CCB posted a draft updated Advertising Guidance for 30-day public comment (~deadline Aug 28, 2026). Four material changes:</p>
-    <ul style="margin-top:10px;padding-left:18px;font-size:17px;color:#444;line-height:2.1;">
-      <li><strong>🆕 AI-Assisted Advertising (NEW RULE):</strong> First-ever AI content subsection — no misleading product images, no modified warning symbols, exact health warning text required. Any AI-assisted image workflow needs checking against these three requirements.</li>
-      <li><strong>Age-Gating (Clarification):</strong> Age gate must fire on direct sub-page entry, not just homepage — a technical change for most licensee sites.</li>
-      <li><strong>Social Media Health Warning (Update):</strong> Pinned comment must be visible across <em>all devices and platforms</em> — stricter than the Feb 2026 wording. May affect Instagram/Facebook pinning compliance.</li>
-      <li><strong>Prize/Loyalty Promotions (Already in effect since Jun 2024):</strong> Codifies Act 166 of 2023 — spin-a-wheel prizes at checkout and loyalty programs are now permitted for adult-use retail, with pre-approval.</li>
-    </ul>
+    <p class="summary">CCB posted a draft updated Advertising Guidance for 30-day public comment (~closes Aug 28, 2026). Four material changes — including a brand-new AI advertising rule. Marketing team has completed a full review.</p>
+
+    <details>
+      <summary>Read more — all 4 changes</summary>
+      <div class="detail-body">
+        <h4>1. 🆕 AI-Assisted Advertising — NEW RULE (High Relevance)</h4>
+        <p>First-ever AI content subsection in CCB Advertising Guidance. Three requirements when using AI to generate advertising content:</p>
+        <ul>
+          <li>No misleading product images (AI cannot generate images that misrepresent product appearance)</li>
+          <li>No modified health warning symbols</li>
+          <li>Exact required health warning text must appear — AI cannot paraphrase or rewrite it</li>
+        </ul>
+        <p>Any AI-assisted workflow used for social or marketing concepts needs checking against these three requirements. The burden is low where AI content stays at concept/draft stage, but the requirements become enforceable once the guidance is final.</p>
+
+        <h4>2. Age-Gating — Clarification (Medium Relevance)</h4>
+        <p>The draft strengthens age-gating language: the gate must fire if visitors go DIRECTLY TO A SUB-PAGE, not just the homepage. Many licensee sites won't handle sub-page direct entry out of the box — a technical check is needed. The public comment window is an opportunity to ask the CCB for implementation guidance on hosted e-commerce platforms (Shopify, Squarespace, Weebly, etc.).</p>
+
+        <h4>3. Social Media Health Warning — Pinned Comment (Language Update)</h4>
+        <p>The Feb 2026 version said the warning may be "the first comment that follows." The new draft says the method must "guarantee the post and warning are actually seen together on ALL DEVICES AND PLATFORMS through which the post might be rendered." This platform-portability test is more stringent and may affect whether Instagram/Facebook pinning satisfies the requirement. Seek clarity via public comment.</p>
+
+        <h4>4. Prizes, Awards &amp; Inducements — Statutory Clarification (Already in Effect)</h4>
+        <p>Codifies Act 166 of 2023 (effective June 10, 2024) — spin-a-wheel prizes at checkout, loyalty programs, and merchandise-with-purchase are now PERMITTED for adult-use retail. This is not new — it's been law since Jun 2024. The explicit inclusion in Advertising Guidance confirms licensees can run prize and loyalty promotions with pre-approval.</p>
+
+        <h4>How to Submit Comment</h4>
+        <p>Visit ccb.vermont.gov/guidance, find the draft Advertising Guidance (July 2026 markup), and follow the comment submission instructions. Deadline is approximately August 28, 2026 (30 days from July 29 Board meeting).</p>
+        <div class="source-tag">Source: CCB July Board Meeting Recap + Draft Advertising Guidance markup at ccb.vermont.gov/sites/ccb/files/2026-07/Advertising.Guidance_07.2026_Markup.pdf</div>
+      </div>
+    </details>
+
   </div>
 
   <div class="card info">
@@ -444,27 +493,45 @@
       <span class="badge badge-blue">Vermont Context</span>
     </div>
     <h3>Vermont Already Stricter Than Federal</h3>
-    <p>Vermont adopted its own intoxicating hemp ban with a 10mg/package cap effective July 1, 2026. Delta-8, delta-9-from-hemp, and similar manufactured cannabinoids already require Vermont licensing — unlicensed hemp THC products are already non-compliant in Vermont. Licensed Vermont operators are already working under that state framework. The Nov 12 federal deadline adds a federal layer on top of what Vermont has already done.</p>
+    <p class="summary">Vermont adopted its own intoxicating hemp ban with a 10mg/package cap effective July 1, 2026. Licensed Vermont operators are already working under that state framework. The federal Nov 12 deadline adds a layer on top of what Vermont has already done.</p>
+
+    <details>
+      <summary>Read more</summary>
+      <div class="detail-body">
+        <h4>Vermont's Hemp Framework</h4>
+        <p>Vermont CCB adopted an intoxicating hemp ban effective July 1, 2026 with a 10mg/package total THC cap. Delta-8, delta-9-from-hemp, and similar manufactured intoxicating cannabinoids are subject to Vermont's licensing system. Unlicensed hemp THC products have been non-compliant in Vermont since July 1 — the state ran about a month ahead of the federal deadline.</p>
+        <h4>How Federal Nov 12 Adds to Vermont's Framework</h4>
+        <p>Vermont's rule covers intrastate sales and licensing. The federal P.L. 119-37 adds a federal layer: any hemp product with more than 0.4mg total THC per container becomes a controlled substance federally on Nov 12 (or Dec 11 if the CR delay passes and House concurs). Interstate commerce and federal enforcement are the new dimensions. Vermont-only sales under the licensed framework remain governed by Vermont's rules.</p>
+        <h4>The Open Question for Licensees</h4>
+        <p>Whether a given input or hemp SKU meets the federal "synthetic or converted cannabinoid" definition is the decisive question — those products hit the Nov 12 hard stop permanently, regardless of whether the CR delay passes. It is an attorney question, not a reading-the-statute one.</p>
+        <div class="source-tag">Source: Vermont CCB, Act 176 (2026), CCB July Board Meeting Recap</div>
+      </div>
+    </details>
+
   </div>
 
-  <!-- QUICK TAKE BOX -->
+  <!-- KEY DATES -->
   <div class="status-box" style="margin-top:36px;">
     <h3>⚡ Key Dates to Watch</h3>
     <div class="status-row">
-      <span class="label">~Aug 18 — Curaleaf/Aurora ultimatum deadline</span>
+      <span class="label">~Aug 18 — Curaleaf/Aurora board ultimatum</span>
       <span class="val val-orange">Watch for tender launch</span>
     </div>
     <div class="status-row">
-      <span class="label">Sep 30 — Government funding deadline (CR must pass)</span>
-      <span class="val val-red">Hemp delay lives or dies here</span>
+      <span class="label">~Aug 28 — VT CCB Draft Advertising Guidance comment deadline</span>
+      <span class="val val-orange">Submit comment</span>
     </div>
     <div class="status-row">
-      <span class="label">Sept–Oct — DEA ALJ recommendation on rescheduling</span>
+      <span class="label">Sep 30 — CR funding deadline (hemp delay lives or dies)</span>
+      <span class="val val-red">House must act</span>
+    </div>
+    <div class="status-row">
+      <span class="label">Sept–Oct — DEA ALJ rescheduling recommendation</span>
       <span class="val val-orange">280E relief still pending</span>
     </div>
     <div class="status-row">
       <span class="label">Oct 15 — Square cuts off hemp/CBD merchants</span>
-      <span class="val val-red">Check payment processor now</span>
+      <span class="val val-red">Check payment processor</span>
     </div>
     <div class="status-row">
       <span class="label">Nov 12 — Federal hemp ban hard stop (synthetics + if CR fails)</span>
@@ -478,7 +545,7 @@
 
   <div class="footer">
     <p>Vermont Herbal Essentials | August 13, 2026</p>
-    <p style="margin-top:4px;">Sources: TDR (direct CEO interview), GovTrack, ir.terrascend.com, GlobeNewswire, PDF metadata verification, Marijuana Moment</p>
+    <p style="margin-top:4px;">Sources: TDR (direct CEO interview), GovTrack, ir.terrascend.com, GlobeNewswire, PDF metadata verification, Marijuana Moment, ccb.vermont.gov</p>
     <p style="margin-top:8px;"><a href="aug12-2026.html" style="color:#2980b9;text-decoration:none;font-weight:600;">← Previous edition: Aug 2–12 roundup</a></p>
     <p style="margin-top:6px;color:#c0392b;font-weight:600;">⚠️ News summary for general information — not legal advice. Consult an attorney before acting on any regulatory item.</p>
   </div>
